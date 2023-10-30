@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    height: 85vh;
+    height: 84vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,23 +25,50 @@ input {
     margin: 0 2rem;
     border: none;
     border-radius: 20px;
+    border: 2px solid #212534;
     color: #212534;
+    outline: none;
 }
 
-input["type = submit"] {
+input[type = "submit"]:hover {
     cursor: pointer;
+    color: white;
+    background-color: #212534;
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+#qr {
+    margin: 4rem auto;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+footer > a {
+    color: white;
+}
+
+footer > a:hover {
+    color: #4e00c2;
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
 }
 
 footer > img {
     height: 60px;
     width: 60px;
     cursor: pointer;
+}
+
+footer > p {
+    font-size: 1.5rem;
+    font-family: "Gloria Hallelujah";
+    color: white;
 }
 
 footer > img:hover {
