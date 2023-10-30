@@ -1,0 +1,9 @@
+<%- include('partials/header.ejs') %>
+
+        <h1>URL to Qr - Converter</h1>
+        <form action="/qr" method="post">
+            <input type="text" name="url" id="urlText">
+            <input type="submit" value="Get Qr">
+        </form>
+
+<%- include('partials/footer.ejs') %>
