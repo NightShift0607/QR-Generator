@@ -23,7 +23,7 @@ app.get("/", (req,res) => {
 app.post("/qr", (req, res) => {
     var url = req.body.url;
     var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream('public/images/qr_image.png'));
+    qr_svg.pipe(fs.createWriteStream(__dirname + "/public/images/qr_image.png"));
     res.render(__dirname + "/views/img.ejs");
 });
 
